@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consecuencias del Cambio Climático - UES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="concecuencia_climatico.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-content"></div>
+        </div>
+
+        <div class="header__main">
+            <a href="#" class="header__logo">
+    <img src="LogoUes.png" alt="Logo Universidad de El Salvador" class="header__logo-img">
+    <div class="header__logo-text">
+        <div class="header__logo-title">UNIVERSIDAD</div>
+        <div class="header__logo-subtitle">de El Salvador</div>
+    </div>
+</a>
+
+            <button class="header__toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Conceptos Fundamentales</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Impacto.html" class="nav__link nav__link--active">Impacto en El Salvador<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./mitigar_cambio_climático.html" class="nav__link">Como mitigar el cambio climatico<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Glosario.html" class="nav__link">Glosario<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Referencias_bibliograficas.html" class="nav__link">Referencias<span class="nav__arrow">▼</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <div class="header__search">
+                    <input type="search" class="header__search-input" placeholder="Buscar" aria-label="Buscar">
+                    <button class="header__search-btn" aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="./Impacto.html" class="breadcrumb__link">IMPACTOS EN EL SALVADOR</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <h1 class="hero-banner__title">Consecuencias del cambio climático</h1>
+        </section>
+
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <article class="carousel-container">
+                <!-- Carousel Wrapper -->
+                <div class="carousel-wrapper">
+                    <!-- Slide 1 -->
+                    <article class="carousel-slide carousel-slide--active" data-slide="1">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">1. Producción agrícola y seguridad alimentaria</h2>
+                                <p class="slide-text">
+                                    El incremento de eventos extremos (sequías intensas seguidas de lluvias torrenciales) golpea directamente la producción de cultivos básicos como maíz y frijol, así como frutas y hortalizas, esto pone en riesgo la disponibilidad de alimentos. Al escasear, los alimentos aumentan de precio, disminuyen su calidad y se vuelven menos accesibles para la población (Programa de las Naciones Unidas para el Desarrollo, 2025).
+                                </p>
+                            </div>
+                            <figure class="slide-image">
+                                <img src="1carrusel.jpg" alt="Producción agrícola" class="slide-img">
+                                 <figcaption class="diagram-section__caption">
+                    Imagen tomada de La Prensa Gráfica: reporte sobre el impacto de las lluvias en la producción de hortalizas en El Salvador.
+                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <!-- Slide 2 -->
+                    <article class="carousel-slide" data-slide="2">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">2. Impacto en Zonas Costeras y Nivel del Mar</h2>
+                                <p class="slide-text">
+                                    Según el estudio de Estudio Periodístico / Síntesis Científica Sobre Pérdida de Playas, El Mundo(2020) advierten que, debido a la elevación del nivel del mar, El Salvador podría perder hasta el 80% de sus playas para el año 2100, esto es mucho más grave que solo la pérdida de territorio.
+                                </p>
+                                <h3 class="slide-subtitle">Las consecuencias incluyen:</h3>
+                                <ul class="consequences-list">
+                                    <li class="consequences-list__item">
+                                        <span class="consequences-list__bullet">•</span>
+                                        Mayor salinidad en la zona costera.
+                                    </li>
+                                    <li class="consequences-list__item">
+                                        <span class="consequences-list__bullet">•</span>
+                                        Deterioro y retroceso de los vitales bosques de manglares.
+                                    </li>
+                                    <li class="consequences-list__item">
+                                        <span class="consequences-list__bullet">•</span>
+                                        Pérdida de especies y salinización de los acuíferos (agua subterránea).
+                                    </li>
+                                    <li class="consequences-list__item">
+                                        <span class="consequences-list__bullet">•</span>
+                                        Reducción del agua dulce para la agricultura y el consumo.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Slide 3 -->
+                    <article class="carousel-slide" data-slide="3">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">3. Exposición a desastres</h2>
+                                <p class="slide-text">
+                                    El calentamiento de los océanos actúan como combustible para tormentas tropicales más intensas, lo que estas afectan principalmente a las poblaciones vulnerables que viven en laderas inestables o cerca de ríos y quebradas, a través de deslizamientos e inundaciones, a consecuencias las lluvias récord de los últimos años han provocado constantes tragedias humanas.
+                                </p>
+                            </div>
+                            <figure class="slide-image">
+                                <img src="3carrusel.png" alt="Desastres naturales" class="slide-img">
+                                 <figcaption class="diagram-section__caption">
+                    Fotografía tomada del comunicado de UNICEF sobre los daños causados por la Tormenta Tropical Amanda en El Salvador.
+                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <!-- Slide 4 -->
+                    <article class="carousel-slide" data-slide="4">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">4. Reducción de la disponibilidad de agua</h2>
+                                <p class="slide-text">
+                                    En un estudio de la Universidad Centroamericana José Simeón Cañas (UCA), Mayorga et al. (s. f.) señalan que, aunque parezca contradictorio, a pesar de tener lluvias más extremas, el agua es cada día más escasa, ya que esto se debe a la disminución del caudal de los ríos en la época seca y a la reducción de la infiltración de agua en el suelo, además de que la destrucción de bosques y la urbanización descontrolada (que sella el suelo con concreto) impiden que los mantos acuíferos se recarguen.
+                                </p>
+                            </div>
+                            <figure class="slide-image">
+                                <img src="4carrusel.jpg" alt="Desastres naturales" class="slide-img">
+                                 <figcaption class="diagram-section__caption">
+                    Imagen tomada de ElSalvador.com que ilustra la crisis y alternativas privadas ante la falta de agua potable en San Salvador.
+                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <!-- Slide 5 -->
+                    <article class="carousel-slide" data-slide="5">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">5. Transformación de ecosistemas y biodiversidad</h2>
+                                <p class="slide-text">
+                                    En su revisión sobre los desafíos del cambio climático en la zona costero-marina, Chicas-Batres et al. (2015) destacan la importancia crítica de los ecosistemas como los manglares. Señalan que estos bosques actúan como una formidable barrera natural que protege y estabiliza la línea costera, una función vital ante la erosión y los eventos extremos.
+                                </p>
+                                <p class="slide-text">
+                                    Además, el estudio confirma que estos ecosistemas son la "cuna" de especies vitales para la economía local, ya que proporcionan medios de vida e ingresos a las comunidades costeras a través de oportunidades como la pesca artesanal y la acuicultura.
+                                </p>
+                            </div>
+                            <figure class="slide-image">
+                                <img src="5carrusel.jpg" alt="Desastres naturales" class="slide-img">
+                                 <figcaption class="diagram-section__caption">
+                    Zulma de Mendoza, coordinadora regional de la UICN, señala un mapa de áreas prioritarias para la restauración forestal. Tomado de El Salvador, un modelo para los esfuerzos de conservación de manglares en todo el mundo, por J. Reingold, 2023, Divergentes. Derechos de autor 2023 por Julián Reingold / Diálogo Chino.
+                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <!-- Slide 6 -->
+                    <article class="carousel-slide" data-slide="6">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">6. Causa Global del Aumento del Nivel del Mar</h2>
+                                <p class="slide-text">
+                                    Las temperaturas globales persistentemente altas están acelerando el derretimiento de glaciares y casquetes polares, este hielo derretido fluye al océano, provocando que su nivel medio se eleve a nivel mundial. Esta elevación amenaza con la inundación permanente de zonas costeras, forzando el desplazamiento de poblaciones tierra adentro.
+                                </p>
+                            </div>
+                             <figure class="slide-image">
+                                <img src="6carrusel.jpeg" alt="Desastres naturales" class="slide-img">
+                                 <figcaption class="diagram-section__caption">
+                    Infografía de Fundación Aquae sobre claves del aumento del nivel del mar.
+                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <!-- Slide 7 -->
+                    <article class="carousel-slide" data-slide="7">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <h2 class="slide-title">7. Salud humana</h2>
+                                <p class="slide-text">
+                                    Las condiciones extremas impactan la salud, especialmente de niños y ancianos. El aumento de las temperaturas y los cambios en la lluvia facilitan la propagación de enfermedades infecciosas transmitidas por vectores, como el dengue y otras enfermedades.
+                                </p>
+                            </div>
+                             <figure class="slide-image">
+                                <img src="7carrusel.jpg" alt="Desastres naturales" class="slide-img">
+                                 <figcaption class="diagram-section__caption">
+                    Imagen/ilustración extraída de EcologíaVerde sobre los principales problemas ambientales en El Salvador.
+                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="carousel-arrow carousel-arrow--prev" onclick="previousSlide()" aria-label="Anterior">
+                    <span class="arrow-icon">‹</span>
+                </button>
+                <button class="carousel-arrow carousel-arrow--next" onclick="nextSlide()" aria-label="Siguiente">
+                    <span class="arrow-icon">›</span>
+                </button>
+
+                <!-- Dots Navigation -->
+                <div class="carousel-dots">
+                    <button class="carousel-dot carousel-dot--active" onclick="goToSlide(1)" aria-label="Ir a diapositiva 1"></button>
+                    <button class="carousel-dot" onclick="goToSlide(2)" aria-label="Ir a diapositiva 2"></button>
+                    <button class="carousel-dot" onclick="goToSlide(3)" aria-label="Ir a diapositiva 3"></button>
+                    <button class="carousel-dot" onclick="goToSlide(4)" aria-label="Ir a diapositiva 4"></button>
+                    <button class="carousel-dot" onclick="goToSlide(5)" aria-label="Ir a diapositiva 5"></button>
+                    <button class="carousel-dot" onclick="goToSlide(6)" aria-label="Ir a diapositiva 6"></button>
+                    <button class="carousel-dot" onclick="goToSlide(7)" aria-label="Ir a diapositiva 7"></button>
+                </div>
+
+                <!-- Slide Counter -->
+                <div class="slide-counter">
+                    <span class="slide-counter__current">1</span> / <span class="slide-counter__total">7</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <!-- Decorative Wave -->
+        <div class="footer__wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"></path>
+            </svg>
+        </div>
+
+        <div class="footer__content">
+            <!-- Project Info Section -->
+            <section class="footer__section footer__section--main">
+                <div class="footer__logo-container">
+                    <img src="LogoUes.png" alt="UES Logo" class="footer__logo">
+                </div>
+                <h3 class="footer__section-title">Impactos del Cambio Climático</h3>
+                <p class="footer__description">
+                    Proyecto educativo sobre los efectos del cambio climático en El Salvador
+                </p>
+                <div class="footer__icons">
+                    <span class="footer__icon" title="Sostenibilidad">🌱</span>
+                    <span class="footer__icon" title="Planeta">🌍</span>
+                    <span class="footer__icon" title="Energía limpia">♻️</span>
+                    <span class="footer__icon" title="Conciencia">💚</span>
+                </div>
+            </section>
+
+            <!-- University Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Universidad</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">🎓</span>
+                        <span>Universidad de El Salvador</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📚</span>
+                        <span>Educación Ambiental</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📅</span>
+                        <span>2025</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Author Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Desarrollado por</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--author">
+                        <span class="footer__list-icon">👨‍💻</span>
+                        <div>
+                            <strong>Carlos Antonio Salgado Romero</strong>
+                            <span class="footer__badge">Estudiante UES</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Navegación</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./index.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Conceptos Fundamentales
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Impacto.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Impacto en El Salvador
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Glosario.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Glosario
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Referencias_bibliograficas.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Referencias
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer__bottom">
+            <div class="footer__bottom-content">
+                <p class="footer__copyright">
+                    © 2025 Universidad de El Salvador - Educación Ambiental
+                </p>
+                <p class="footer__tagline">
+                    🌿 Juntos por un futuro sostenible
+                </p>
+            </div>
+            <div class="footer__climate-info">
+                <span class="footer__climate-icon">🌡️</span>
+                <span class="footer__climate-text">Actuemos hoy por el mañana</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated particles effect -->
+    <div class="footer__particles">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 7;
+
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('nav--open');
+        }
+
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('navMenu');
+            const toggle = document.querySelector('.header__toggle');
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+                nav.classList.remove('nav--open');
+            }
+        });
+
+        function updateSlideCounter() {
+            document.querySelector('.slide-counter__current').textContent = currentSlide;
+        }
+
+        function updateDots() {
+            document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('carousel-dot--active', index + 1 === currentSlide);
+            });
+        }
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.carousel-slide').forEach((slide, index) => {
+                slide.classList.toggle('carousel-slide--active', index + 1 === slideNumber);
+            });
+            currentSlide = slideNumber;
+            updateSlideCounter();
+            updateDots();
+        }
+
+        function nextSlide() {
+            const next = currentSlide === totalSlides ? 1 : currentSlide + 1;
+            showSlide(next);
+        }
+
+        function previousSlide() {
+            const prev = currentSlide === 1 ? totalSlides : currentSlide - 1;
+            showSlide(prev);
+        }
+
+        function goToSlide(slideNumber) {
+            showSlide(slideNumber);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') previousSlide();
+            if (e.key === 'ArrowRight') nextSlide();
+        });
+    </script>
+</body>
+</html>

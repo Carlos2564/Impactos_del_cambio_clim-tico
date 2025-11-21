@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitigar el Cambio Climático - UES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mitigacion.css"> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-content"></div>
+        </div>
+
+        <div class="header__main">
+            <a href="#" class="header__logo">
+    <img src="LogoUes.png" alt="Logo Universidad de El Salvador" class="header__logo-img">
+    <div class="header__logo-text">
+        <div class="header__logo-title">UNIVERSIDAD</div>
+        <div class="header__logo-subtitle">de El Salvador</div>
+    </div>
+</a>
+
+            <button class="header__toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Conceptos Fundamentales</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Impacto.html" class="nav__link">Impacto en El Salvador<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./mitigar_cambio_climático.html" class="nav__link nav__link--active">Como mitigar el cambio climatico<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Glosario.html" class="nav__link">Glosario<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Referencias_bibliograficas.html" class="nav__link">Referencias<span class="nav__arrow">▼</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <div class="header__search">
+                    <input type="search" class="header__search-input" placeholder="Buscar" aria-label="Buscar">
+                    <button class="header__search-btn" aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="./Enfrentar_Cambio.html" class="breadcrumb__link">Enfrentar el cambio climático en El Salvador</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="./medidad_adaptacion.html" class="breadcrumb__link">Medidas de adaptación según dónde se vive</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <h1 class="hero-banner__title">Mitigar el cambio climático</h1>
+        </section>
+
+        <!-- Content Wrapper -->
+        <article class="content-wrapper">
+            <!-- Introduction Section -->
+            <section class="intro-section fade-in">
+                <h2 class="intro-section__title">¿Cómo mitigar el cambio climático?</h2>
+                <p class="intro-section__text">
+                    La mitigación del cambio climático, según la define el Programa de las Naciones Unidas para el Desarrollo (PNUD, 2024), se refiere a cualquier medida adoptada por gobiernos, empresas o individuos para reducir o evitar las emisiones de gases de efecto invernadero o para mejorar los sumideros de carbono que los eliminan de la atmósfera.
+                </p>
+            </section>
+
+            <!-- Featured Image Section -->
+            <section class="featured-image-section fade-in">
+                <figure class="featured-image__figure">
+                    <img src="metigacion1.jpg" alt="Mitigación del cambio climático" class="featured-image__img">
+                    <figcaption class="featured-image__caption">
+                       La figura muestra los cambios proyectados en las temperaturas media y máxima bajo el escenario RCP 8.5 para el periodo 2071-2100. Adaptado de Plan nacional de adaptación al cambio climático (p. 13), por Ministerio de Medio Ambiente y Recursos Naturales, 2019.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <!-- Strategies Section -->
+            <section class="strategies-section fade-in">
+                <h2 class="strategies-section__title">
+                    El PNUD (2024) explica que la reducción de los gases de efecto invernadero se puede lograr mediante varias estrategias clave:
+                </h2>
+
+                <article class="strategy-grid">
+                    <!-- Strategy 1 -->
+                    <div class="strategy-card fade-in-left">
+                        <div class="strategy-card__icon">🔥</div>
+                        <h3 class="strategy-card__title">El abandono de los combustibles fósiles</h3>
+                        <p class="strategy-card__text">
+                            Se considera crucial la transición de los combustibles fósiles, que son la mayor fuente de GEI, hacia fuentes modernas de energía renovable, como la solar, la eólica y la geotérmica.
+                        </p>
+                    </div>
+
+                    <!-- Strategy 2 -->
+                    <div class="strategy-card fade-in">
+                        <div class="strategy-card__icon">⚡</div>
+                        <h3 class="strategy-card__title">La mejora de la eficiencia energética</h3>
+                        <p class="strategy-card__text">
+                            Implica utilizar menos energía en general, tanto en edificios e industrias como en el transporte y la generación eléctrica.
+                        </p>
+                    </div>
+
+                    <!-- Strategy 3 -->
+                    <div class="strategy-card fade-in-right">
+                        <div class="strategy-card__icon">🌾</div>
+                        <h3 class="strategy-card__title">El cambio de las prácticas agrícolas</h3>
+                        <p class="strategy-card__text">
+                            Dado que algunos métodos de cultivo liberan potentes GEI (metano y óxido nitroso), el PNUD (2024) promueve prácticas regenerativas que mejoren la salud del suelo y reduzcan las emisiones relacionadas con la ganadería.
+                        </p>
+                    </div>
+
+                    <!-- Strategy 4 -->
+                    <div class="strategy-card fade-in-left">
+                        <div class="strategy-card__icon">🌳</div>
+                        <h3 class="strategy-card__title">La gestión sostenible y la conservación de los bosques</h3>
+                        <p class="strategy-card__text">
+                            Los bosques actúan como sumideros de carbono vitales al absorber CO2, por ello, el PNUD (2024) destaca que reducir la deforestación y la degradación forestal es fundamental.
+                        </p>
+                    </div>
+
+                    <!-- Strategy 5 -->
+                    <div class="strategy-card fade-in">
+                        <div class="strategy-card__icon">💧</div>
+                        <h3 class="strategy-card__title">La restauración y conservación de ecosistemas críticos</h3>
+                        <p class="strategy-card__text">
+                            Además de los bosques, ecosistemas como los humedales, las turberas y los biomas costeros (como los manglares) contribuyen significativamente al secuestro de carbono.
+                        </p>
+                    </div>
+
+                    <!-- Strategy 6 -->
+                    <div class="strategy-card fade-in-right">
+                        <div class="strategy-card__icon">🏛️</div>
+                        <h3 class="strategy-card__title">La creación de un entorno favorable</h3>
+                        <p class="strategy-card__text">
+                            Se refiere a las políticas, inversiones y normativas (como los incentivos o la fijación de precios al carbono) que los gobiernos implementan para impulsar la reducción de emisiones.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+           <!-- Video Section -->
+<section class="video-section fade-in">
+    <h2 class="video-section__title">Conoce más sobre la mitigación del cambio climático</h2>
+    <div class="video-container">
+        <iframe 
+            class="video-container__iframe"
+            src="https://www.youtube.com/embed/-NmR0cTANsI" 
+            title="Video sobre mitigación del cambio climático" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <!-- Decorative Wave -->
+        <div class="footer__wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"></path>
+            </svg>
+        </div>
+
+        <div class="footer__content">
+            <!-- Project Info Section -->
+            <section class="footer__section footer__section--main">
+                <div class="footer__logo-container">
+                    <img src="LogoUes.png" alt="UES Logo" class="footer__logo">
+                </div>
+                <h3 class="footer__section-title">Impactos del Cambio Climático</h3>
+                <p class="footer__description">
+                    Proyecto educativo sobre los efectos del cambio climático en El Salvador
+                </p>
+                <div class="footer__icons">
+                    <span class="footer__icon" title="Sostenibilidad">🌱</span>
+                    <span class="footer__icon" title="Planeta">🌍</span>
+                    <span class="footer__icon" title="Energía limpia">♻️</span>
+                    <span class="footer__icon" title="Conciencia">💚</span>
+                </div>
+            </section>
+
+            <!-- University Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Universidad</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">🎓</span>
+                        <span>Universidad de El Salvador</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📚</span>
+                        <span>Educación Ambiental</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📅</span>
+                        <span>2025</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Author Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Desarrollado por</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--author">
+                        <span class="footer__list-icon">👨‍💻</span>
+                        <div>
+                            <strong>Carlos Antonio Salgado Romero</strong>
+                            <span class="footer__badge">Estudiante UES</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Navegación</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./index.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Conceptos Fundamentales
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Impacto.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Impacto en El Salvador
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Glosario.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Glosario
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Referencias_bibliograficas.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Referencias
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer__bottom">
+            <div class="footer__bottom-content">
+                <p class="footer__copyright">
+                    © 2025 Universidad de El Salvador - Educación Ambiental
+                </p>
+                <p class="footer__tagline">
+                    🌿 Juntos por un futuro sostenible
+                </p>
+            </div>
+            <div class="footer__climate-info">
+                <span class="footer__climate-icon">🌡️</span>
+                <span class="footer__climate-text">Actuemos hoy por el mañana</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated particles effect -->
+    <div class="footer__particles">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('nav--open');
+        }
+
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('navMenu');
+            const toggle = document.querySelector('.header__toggle');
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+                nav.classList.remove('nav--open');
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

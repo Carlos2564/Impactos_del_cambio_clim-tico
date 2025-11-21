@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Variabilidad Climática - UES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="variabilidad climatica.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-content"></div>
+        </div>
+
+        <div class="header__main">
+            <a href="#" class="header__logo">
+    <img src="LogoUes.png" alt="Logo Universidad de El Salvador" class="header__logo-img">
+    <div class="header__logo-text">
+        <div class="header__logo-title">UNIVERSIDAD</div>
+        <div class="header__logo-subtitle">de El Salvador</div>
+    </div>
+</a>
+
+            <button class="header__toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--active">Conceptos Fundamentales</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Impacto.html" class="nav__link">Impacto en El Salvador<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./mitigar_cambio_climático.html" class="nav__link">Como mitigar el cambio climatico<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Glosario.html" class="nav__link">Glosario<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Referencias_bibliograficas.html" class="nav__link">Referencias<span class="nav__arrow">▼</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <div class="header__search">
+                    <input type="search" class="header__search-input" placeholder="Buscar" aria-label="Buscar">
+                    <button class="header__search-btn" aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="./efecto_invernadero.html" class="breadcrumb__link">El efecto invernadero</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="./variabilidad_climática.html" class="breadcrumb__link">la variabilidad climática</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <h1 class="hero-banner__title">La variabilidad climática</h1>
+        </section>
+
+        <!-- Main Content Section -->
+        <article class="content-wrapper">
+            <!-- First Section: Definition -->
+            <section class="info-section fade-in">
+                <h2 class="info-section__title">¿Qué es la variabilidad climática?</h2>
+                <p class="info-section__text">
+                    A diferencia del cambio climático (causado por el ser humano), según Education (s. f.) la variabilidad climática se refiere a las fluctuaciones y variaciones naturales del comportamiento de la atmósfera.
+                </p>
+                <p class="info-section__text">
+                    Los climatólogos registran las variables meteorológicas (temperatura, lluvia, viento) a lo largo del tiempo, estos registros permiten establecer cuál es el comportamiento "normal" o promedio del clima en una región específica, usualmente usando un período de referencia de 30 años (conocido como "promedio histórico").
+                </p>
+                <p class="info-section__text">
+                    Por lo tanto, la variabilidad climática son esas fluctuaciones naturales alrededor del promedio, donde el clima siempre ha tenido extremos (años más secos, años más lluviosos), sin embargo, el calentamiento global está exacerbando esta variabilidad, provocando que los extremos sean más frecuentes e intensos, superando los rangos "normales" históricos.
+                </p>
+            </section>
+
+            <!-- Two Column Layout with Image -->
+            <section class="split-section">
+                <article class="split-section__content fade-in-left">
+                    <h2 class="split-section__title">El fenómeno El Niño-La Niña</h2>
+                    <p class="split-section__text">
+                        Según World Health Organization: WHO (2023) el fenómeno El Niño-Oscilación del Sur (ENSO), sin embargo, no es el único factor; las temperaturas del océano y los sistemas de presión atmosférica también generan variaciones anuales.
+                    </p>
+                    <p class="split-section__text">
+                        ENSO es un fenómeno atmosférico conocido desde hace siglos, en El Salvador, los registros del Observatorio Ambiental del Ministerio de Medio Ambiente y Recursos Naturales (MARN) indican que El Niño se presenta, en promedio, cada tres a cinco años.
+                    </p>
+                </article>
+
+                <figure class="split-section__figure fade-in-right">
+                    <img src="niño y la niña 2.jpg" alt="Fenómeno El Niño y La Niña" class="split-section__image">
+                    <figcaption class="image-section__caption">
+                    Imagen 1 — EcoExploratorio: Esta imagen muestra las anomalías de temperatura en la superficie del mar y fue tomada de la página del Museo EcoExploratorio, donde se utiliza como apoyo visual para explicar los fenómenos El Niño y La Niña. 
+                    </figcaption>
+                </figure>
+            </section>
+
+             <!-- Additional Image Section -->
+            <section class="image-section fade-in">
+                <figure class="image-section__figure">
+                    <img src="niño y la niña.jpg" alt="Variabilidad climática en El Salvador" class="image-section__image">
+                    <figcaption class="image-section__caption">
+                    Imagen 2 — Enel Green Power: Imagen ilustrativa extraída del artículo de Enel Green Power sobre El Niño y La Niña (publicado el 29 de mayo de 2024); se usa como material gráfico explicativo proporcionado por la empresa en su Learning Hub Gigawhat para acompañar el texto del artículo y ofrecer una representación gráfica de los efectos climáticos asociados a ambos fenómenos.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <!-- El Niño / La Niña Details -->
+            <section class="details-section fade-in">
+                <article class="detail-card detail-card--nina">
+                    <h3 class="detail-card__title">La Niña</h3>
+                    <p class="detail-card__text">
+                        Es la fase opuesta, ocurre cuando las temperaturas del océano en esa misma región descienden (se enfrían), provocando condiciones de mayor lluvia para Centroamérica.
+                    </p>
+                </article>
+                <article class="detail-card detail-card--nino">
+                    <h3 class="detail-card__title">El Niño</h3>
+                    <p class="detail-card__text">
+                        Se produce por un calentamiento anómalo de las aguas del Océano Pacífico Orienta, este calentamiento aumenta la evaporación y carga la atmósfera de humedad, pero tiende a generar sequías prolongadas en Centroamérica (mientras causa lluvias intensas en Sudamérica).
+                    </p>
+                </article>
+            </section>
+
+           
+
+           <!-- Video Section -->
+<section class="video-section fade-in">
+    <h2 class="video-section__title">Conoce más sobre la variabilidad climática</h2>
+    <div class="video-container">
+        <iframe 
+            class="video-container__iframe"
+            src="https://www.youtube.com/embed/2_VPZDUz0Zc?si=RoiVF5jwTqfxDIHl" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <!-- Decorative Wave -->
+        <div class="footer__wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"></path>
+            </svg>
+        </div>
+
+        <div class="footer__content">
+            <!-- Project Info Section -->
+            <section class="footer__section footer__section--main">
+                <div class="footer__logo-container">
+                    <img src="LogoUes.png" alt="UES Logo" class="footer__logo">
+                </div>
+                <h3 class="footer__section-title">Impactos del Cambio Climático</h3>
+                <p class="footer__description">
+                    Proyecto educativo sobre los efectos del cambio climático en El Salvador
+                </p>
+                <div class="footer__icons">
+                    <span class="footer__icon" title="Sostenibilidad">🌱</span>
+                    <span class="footer__icon" title="Planeta">🌍</span>
+                    <span class="footer__icon" title="Energía limpia">♻️</span>
+                    <span class="footer__icon" title="Conciencia">💚</span>
+                </div>
+            </section>
+
+            <!-- University Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Universidad</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">🎓</span>
+                        <span>Universidad de El Salvador</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📚</span>
+                        <span>Educación Ambiental</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📅</span>
+                        <span>2025</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Author Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Desarrollado por</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--author">
+                        <span class="footer__list-icon">👨‍💻</span>
+                        <div>
+                            <strong>Carlos Antonio Salgado Romero</strong>
+                            <span class="footer__badge">Estudiante UES</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Navegación</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./index.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Conceptos Fundamentales
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Impacto.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Impacto en El Salvador
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Glosario.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Glosario
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Referencias_bibliograficas.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Referencias
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer__bottom">
+            <div class="footer__bottom-content">
+                <p class="footer__copyright">
+                    © 2025 Universidad de El Salvador - Educación Ambiental
+                </p>
+                <p class="footer__tagline">
+                    🌿 Juntos por un futuro sostenible
+                </p>
+            </div>
+            <div class="footer__climate-info">
+                <span class="footer__climate-icon">🌡️</span>
+                <span class="footer__climate-text">Actuemos hoy por el mañana</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated particles effect -->
+    <div class="footer__particles">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+    </div>
+</footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('nav--open');
+        }
+
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('navMenu');
+            const toggle = document.querySelector('.header__toggle');
+            
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+                nav.classList.remove('nav--open');
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

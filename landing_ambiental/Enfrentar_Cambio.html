@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfrentar el Cambio Climático en El Salvador - UES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Enfrentar_Cambio.css"> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-content"></div>
+        </div>
+
+        <div class="header__main">
+            <a href="#" class="header__logo">
+    <img src="LogoUes.png" alt="Logo Universidad de El Salvador" class="header__logo-img">
+    <div class="header__logo-text">
+        <div class="header__logo-title">UNIVERSIDAD</div>
+        <div class="header__logo-subtitle">de El Salvador</div>
+    </div>
+</a>
+
+            <button class="header__toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Conceptos Fundamentales</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Impacto.html" class="nav__link">Impacto en El Salvador<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./mitigar_cambio_climático.html" class="nav__link nav__link--active">Como mitigar el cambio climatico<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Glosario.html" class="nav__link">Glosario<span class="nav__arrow">▼</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Referencias_bibliograficas.html" class="nav__link">Referencias<span class="nav__arrow">▼</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <div class="header__search">
+                    <input type="search" class="header__search-input" placeholder="Buscar" aria-label="Buscar">
+                    <button class="header__search-btn" aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="./Enfrentar_Cambio.html" class="breadcrumb__link">Enfrentar el cambio climático en El Salvador</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="./medidad_adaptacion.html" class="breadcrumb__link">Medidas de adaptación según dónde se vive</a>
+                        <span class="breadcrumb__separator">/</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <h1 class="hero-banner__title">Enfrentar el cambio climático en El Salvador</h1>
+        </section>
+
+        <!-- Content Wrapper -->
+        <article class="content-wrapper">
+            <!-- Two Column Layout Section -->
+            <section class="dual-column-section">
+                <!-- Left Column -->
+                <article class="column-left fade-in-left">
+                    <div class="info-box info-box--primary">
+                        <h2 class="info-box__title">Enfrentar el cambio climático en El Salvador</h2>
+                        <p class="info-box__text">
+                            La adaptación consiste en ajustarse a los impactos del cambio climático que ya son inevitables, para El Salvador, esta es una tarea urgente. El Programa de las Naciones Unidas para el Desarrollo (PNUD, s.f.) señala que el cambio climático amenaza los logros en desarrollo humano del país y que este se caracteriza por una alta vulnerabilidad.
+                        </p>
+                        <p class="info-box__text">
+                            Esta vulnerabilidad es generalizada, un informe de Luna y Cuéllar (2017) detalla que en El Salvador, el 89% del territorio se encuentra expuesto a situaciones de riesgo, y el 95% de la población vive en esas zonas, además estas comunidades con menos recursos son a menudo las más afectadas.
+                        </p>
+                        <p class="info-box__text">
+                            Por ello, el PNUD (s.f.) enfoca sus esfuerzos en contribuir a que las instituciones y la población sean más resilientes a los desastres y se adapten mejor al cambio climático, esto requiere un replanteamiento del desarrollo nacional.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Right Column -->
+                <article class="column-right fade-in-right">
+                    <div class="info-box info-box--secondary">
+                        <h2 class="info-box__title">Los impactos varían según la zona:</h2>
+                        <ul class="impact-list">
+                            <li class="impact-list__item">
+                                <span class="impact-list__icon">🌾</span>
+                                <div class="impact-list__content">
+                                    <h3 class="impact-list__subtitle">Zonas rurales</h3>
+                                    <p class="impact-list__text">
+                                        El reto principal es la producción de alimentos y la seguridad ante desastres, Luna y Cuéllar (2017) indican que las familias rurales que dependen de la siembra de granos básicos ven sus medios de vida seriamente dañados por eventos extremos recurrentes, como sequías e inundaciones.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="impact-list__item">
+                                <span class="impact-list__icon">🏙️</span>
+                                <div class="impact-list__content">
+                                    <h3 class="impact-list__subtitle">Zonas urbanas</h3>
+                                    <p class="impact-list__text">
+                                        Los impactos se centran en la infraestructura y la calidad de vida, en los planes nacionales buscan un "desarrollo urbano y costero resiliente al cambio climático", según Luna y Cuéllar (2017).
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="impact-list__item">
+                                <span class="impact-list__icon">💧</span>
+                                <div class="impact-list__content">
+                                    <h3 class="impact-list__subtitle">Recursos hídricos</h3>
+                                    <p class="impact-list__text">
+                                        El agua es una de las formas más importantes de adaptación, Luna y Cuéllar (2017) señalan que las proyecciones prevén reducciones drásticas en la disponibilidad de agua en el país, lo que afecta a todos los sectores.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+           
+
+            <!-- *** VIDEO SECTION -->
+            <section class="video-section fade-in">
+                <h2 class="video-section__title">Conciencia colectiva para enfrentar el cambio climático</h2>
+                <div class="video-container">
+                    <iframe 
+                        class="video-container__iframe"
+                        src="https://www.youtube.com/embed/GxWohx1_VOw?si=Y97C6J66lHqDTJ5P" 
+                        title="Video sobre adaptación al cambio climático en El Salvador" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            
+        </article>
+    </main>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <!-- Decorative Wave -->
+        <div class="footer__wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"></path>
+            </svg>
+        </div>
+
+        <div class="footer__content">
+            <!-- Project Info Section -->
+            <section class="footer__section footer__section--main">
+                <div class="footer__logo-container">
+                    <img src="LogoUes.png" alt="UES Logo" class="footer__logo">
+                </div>
+                <h3 class="footer__section-title">Impactos del Cambio Climático</h3>
+                <p class="footer__description">
+                    Proyecto educativo sobre los efectos del cambio climático en El Salvador
+                </p>
+                <div class="footer__icons">
+                    <span class="footer__icon" title="Sostenibilidad">🌱</span>
+                    <span class="footer__icon" title="Planeta">🌍</span>
+                    <span class="footer__icon" title="Energía limpia">♻️</span>
+                    <span class="footer__icon" title="Conciencia">💚</span>
+                </div>
+            </section>
+
+            <!-- University Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Universidad</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">🎓</span>
+                        <span>Universidad de El Salvador</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📚</span>
+                        <span>Educación Ambiental</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="footer__list-icon">📅</span>
+                        <span>2025</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Author Section -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Desarrollado por</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--author">
+                        <span class="footer__list-icon">👨‍💻</span>
+                        <div>
+                            <strong>Carlos Antonio Salgado Romero</strong>
+                            <span class="footer__badge">Estudiante UES</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="footer__section">
+                <h3 class="footer__section-title">Navegación</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./index.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Conceptos Fundamentales
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Impacto.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Impacto en El Salvador
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Glosario.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Glosario
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./Referencias_bibliograficas.html" class="footer__link">
+                            <span class="footer__arrow">→</span> Referencias
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer__bottom">
+            <div class="footer__bottom-content">
+                <p class="footer__copyright">
+                    © 2025 Universidad de El Salvador - Educación Ambiental
+                </p>
+                <p class="footer__tagline">
+                    🌿 Juntos por un futuro sostenible
+                </p>
+            </div>
+            <div class="footer__climate-info">
+                <span class="footer__climate-icon">🌡️</span>
+                <span class="footer__climate-text">Actuemos hoy por el mañana</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated particles effect -->
+    <div class="footer__particles">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('nav--open');
+        }
+
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('navMenu');
+            const toggle = document.querySelector('.header__toggle');
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+                nav.classList.remove('nav--open');
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
